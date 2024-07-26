@@ -1,9 +1,10 @@
+// Hide the control add-in
+window.frameElement.parentElement.style.display = "none";
+
 // Grab dropzone
 const dropzone = window.frameElement.parentElement.parentElement.querySelector(
   ".ms-nav-grid-horizontal-container.ms-nav-grid-container"
 );
-
-console.log(dropzone);
 
 // Add event listeners
 dropzone.addEventListener("dragover", (e) => {
